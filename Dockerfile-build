@@ -4,6 +4,8 @@ MAINTAINER Tobias Flohre <tobias.flohre@codecentric.de>
 
 VOLUME /root/.m2
 
+VOLUME /data
+
 WORKDIR /data
 
 CMD mvn clean install
