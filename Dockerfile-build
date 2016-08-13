@@ -1,0 +1,9 @@
+FROM maven:3.3.9-jdk-8
+
+MAINTAINER Tobias Flohre <tobias.flohre@codecentric.de>
+
+VOLUME /root/.m2
+
+WORKDIR /data
+
+CMD mvn clean install
