@@ -2,8 +2,10 @@ FROM maven:3.3.9-jdk-8
 
 MAINTAINER Tobias Flohre <tobias.flohre@codecentric.de>
 
-VOLUME /repo/.m2
+RUN mkdir /repo
 
-RUN chmod -R 755 /repo 
+RUN chmod -R 755 /repo
+
+VOLUME /repo/.m2
 
 CMD mvn clean install
