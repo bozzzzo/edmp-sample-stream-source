@@ -4,4 +4,6 @@ MAINTAINER Tobias Flohre <tobias.flohre@codecentric.de>
 
 VOLUME /root/.m2
 
+USER jenkins
+
 CMD mvn clean install
