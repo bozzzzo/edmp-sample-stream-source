@@ -6,6 +6,6 @@ VOLUME /root/.m2
 
 VOLUME /data
 
-WORKDIR /data
+WORKDIR /data/jobs/edmp-sample-stream-source-1-docker-build-run/workspace
 
 CMD mvn clean install
