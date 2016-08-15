@@ -6,4 +6,4 @@ VOLUME /repo/.m2
 
 RUN chmod -R 755 /repo 
 
-CMD mvn clean install -Dmaven.repo.local=/repo
+CMD mvn clean install
