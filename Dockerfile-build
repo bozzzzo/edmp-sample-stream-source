@@ -4,8 +4,8 @@ MAINTAINER Tobias Flohre <tobias.flohre@codecentric.de>
 
 RUN mkdir /repo
 
-RUN chmod -R 755 /repo
+RUN chmod -R 777 /repo
 
-VOLUME /repo/.m2
+VOLUME /repo
 
-CMD mvn clean install
+CMD mvn clean install -Dmaven.repo.local=/repo
