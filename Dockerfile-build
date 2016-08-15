@@ -2,10 +2,6 @@ FROM maven:3.3.9-jdk-8
 
 MAINTAINER Tobias Flohre <tobias.flohre@codecentric.de>
 
-RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
-
 VOLUME /root/.m2
-
-USER jenkins
 
 CMD mvn clean install
