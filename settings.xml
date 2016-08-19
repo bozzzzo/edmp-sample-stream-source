@@ -5,7 +5,7 @@
       <!--This sends everything else to /public -->
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
-      <url>${env.REPO_URL}/groups/public</url>
+      <url>${env.REPO_URL}/content/groups/public</url>
     </mirror>
   </mirrors>
   <servers>
