@@ -21,7 +21,7 @@ public class EdmpSampleStreamApplication {
 	}
 
 	@Bean
-	@InboundChannelAdapter(value = Source.OUTPUT, poller = @Poller(fixedDelay = "10000", maxMessagesPerPoll = "1"))
+	@InboundChannelAdapter(value = Source.OUTPUT, poller = @Poller(fixedDelay = "100", maxMessagesPerPoll = "1"))
 	public MessageSource<TimeInfo> timerMessageSource() {
 		return () -> MessageBuilder.withPayload(new TimeInfo(new Date().getTime()+"","Label")).build();
 	}
